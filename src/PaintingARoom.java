@@ -31,7 +31,7 @@ public class PaintingARoom {
         int subtractedNum = (windowsNum * WINDOW) + (doorsNum * DOOR);
         double finalSquareFeet = totalAreas - subtractedNum;
         double gallonsNeeded = finalSquareFeet / GALLONS;
-        int rounded = (int)(gallonsNeeded - 0.000000000000001 + 1);
+        int rounded = (((int)(gallonsNeeded * 10) + 10 - 1) / 10);
 
         System.out.println("To paint this room you will need to buy " + rounded + " gallons of paint.");
     }
