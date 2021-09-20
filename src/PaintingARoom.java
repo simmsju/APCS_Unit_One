@@ -19,7 +19,8 @@ public class PaintingARoom {
 
         double wall1Areas = length1 * height * 2;
         double wall2Areas = length2 * height * 2;
-        double totalAreas = wall1Areas + wall2Areas;
+        double ceiling = length1 * length2;
+        double totalAreas = wall1Areas + wall2Areas + ceiling;
 
 
         System.out.println("How many windows are there in the room?");
